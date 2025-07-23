@@ -119,6 +119,73 @@ header {
   }
 }
 
+#plants {
+  margin-top: 120px;
+
+  h2 {
+    font-family: "Noto Serif", serif;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+
+    span {
+      color: var(--primary-color);
+    }
+  }
+
+  p {
+    text-align: center;
+    margin-top: 16px;
+    max-width: 888px;
+    margin: 0 auto;
+  }
+
+  .cards {
+    margin-top: 49px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    row-gap: 30px;
+
+    .card {
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      h6 {
+        font-size: 22px;
+        font-weight: 500;
+        margin-top: 20px;
+        text-align: center;
+      }
+
+      h4 {
+        font-size: 22px;
+        font-weight: bold;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      button {
+        width: 100%;
+        ;
+        background-color: var(--primary-color);
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+        padding: 19px 0;
+
+        &:hover {
+          background-color: #d44c07;
+        }
+      }
+    }
+  }
+}
 
 /* responsive for mobile */
 @media (max-width: 768px) {
@@ -171,5 +238,42 @@ header {
       margin-right: -16px;
     }
 
+  }
+
+  #plants {
+    margin-top: 65px;
+
+    h2 {
+      font-size: 24px;
+
+      span {
+        color: var(--primary-color);
+      }
+    }
+
+    p {
+      margin-top: 16px;
+    }
+
+    .cards {
+      margin-top: 28px;
+      grid-template-columns: repeat(2, 1fr);
+
+      .card {
+        img {
+          width: 100%;
+          height: auto;
+        }
+
+        h6 {
+          font-size: 16px;
+        }
+
+        h4 {
+          font-size: 16px;
+          margin-top: 5px;
+        }
+      }
+    }
   }
 }
